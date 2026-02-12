@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín - Día del Amor y la Amistad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">❤️ San Valentín</h1>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="regalos.html">Regalos</a></li>
+                <li><a href="poemas.html">Poemas</a></li>
+                <li><a href="citas.html">Citas</a></li>
+                <li><a href="amistad.html">Amistad</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>¡Bienvenido al Día del Amor y la Amistad!</h1>
+            <p>Celebra el 14 de febrero con nosotros</p>
+            <button class="btn-cta" onclick="scrollToSection()">Explorar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <h2>¿Qué es San Valentín?</h2>
+                <p>San Valentín es un día dedicado a celebrar el amor en todas sus formas: amor romántico, amor de amistad, amor familiar. 
+                Es una ocasión especial para expresar nuestros sentimientos hacia las personas que queremos y hacerlas sentir valoradas.</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Conoce la Historia</h3>
+                        <p>Descubre los orígenes de esta hermosa tradición</p>
+                        <a href="historia.html" class="card-link">Leer más</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎁</div>
+                        <h3>Ideas de Regalos</h3>
+                        <p>Encuentra el regalo perfecto para tu persona especial</p>
+                        <a href="regalos.html" class="card-link">Ver Regalos</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">✍️</div>
+                        <h3>Poemas Románticos</h3>
+                        <p>Hermosos poemas para expresar tu amor</p>
+                        <a href="poemas.html" class="card-link">Leer Poemas</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🍽️</div>
+                        <h3>Consejos para Citas</h3>
+                        <p>Planifica la cita perfecta de San Valentín</p>
+                        <a href="citas.html" class="card-link">Ver Consejos</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👫</div>
+                        <h3>Celebra la Amistad</h3>
+                        <p>El amor y la amistad van de la mano</p>
+                        <a href="amistad.html" class="card-link">Descubrir</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💝</div>
+                        <h3>Sorpresas Especiales</h3>
+                        <p>Ideas creativas para sorprender a tus seres queridos</p>
+                        <a href="#" onclick="mostrarSorpresa()" class="card-link">Generar Sorpresa</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="container">
+                <blockquote id="quote-display">
+                    <p>"El amor no consiste en mirarse a los ojos, sino en mirar juntos en la misma dirección."</p>
+                    <footer>— Antoine de Saint-Exupéry</footer>
+                </blockquote>
+                <button class="btn-secondary" onclick="cambiarFrase()">Nueva Frase</button>
+            </div>
+        </section>
+
+        <section class="countdown-section">
+            <div class="container">
+                <h2>Preparémonos para San Valentín</h2>
+                <div id="countdown" class="countdown">
+                    <div class="countdown-item">
+                        <span id="days">0</span>
+                        <p>Días</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">0</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">0</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">0</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Día del Amor y la Amistad. Celebra el amor en todas sus formas. ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
